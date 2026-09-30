@@ -1,0 +1,22 @@
+{
+  "id": "argus-quality-guard",
+  "name": "Argus AI-Agent Quality Guard",
+  "version": "1.0.0",
+  "description": "Professional QA suite for AI agents. Test reliability, security, and protocol compliance.",
+  "icon": "🛡️",
+  "entry": "src/gauntlet.ts",
+  "capabilities": ["agent-testing", "security-audit", "blockchain-simulation"],
+  "tools": [
+    {
+      "name": "run_gauntlet",
+      "description": "Run the full suite of quality tests against a target agent",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "target_url": { "type": "string", "description": "The endpoint of the agent to test" }
+        },
+        "required": ["target_url"]
+      }
+    }
+  ]
+}
